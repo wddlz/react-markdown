@@ -56,7 +56,7 @@ var ReactMarkdown = React.createClass({
         }
 
         return React.createElement.apply(React,
-            [this.props.containerTagName, containerProps /*, this.props.childBefore*/]
+            [this.props.containerTagName, containerProps, this.props.childBefore]
                 .concat(renderer.render(ast).concat(
                     [this.props.childAfter]
                 ))
